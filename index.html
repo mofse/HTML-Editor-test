@@ -9,9 +9,9 @@
 </head>
 <body>
     <div id="contbox">
-        Endre farge
-        <input id="inputEl" type="text">
-        <input value="Angi" type="button" onclick="lagreVerdi('inputEl')">
+
+        <label for="inputEl">Velg Farge</label>
+        <input id="colin" type="text">
 
         <br>
         <label for="selectCont">Velg Cont</label>
@@ -20,11 +20,19 @@
             <option value="box2">boks 2</option>
             <option value="box3">boks 3</option>
         </select>
+
+        <input id="test" type="range">
+        <div id="testus"></div>
+        <br>
+
+        <div>
+            <input value="Ny Boks" type="button" onclick="updateBoks()">
+            <input value="Angi" type="button" onclick="lagreVerdi()">
+        </div>
+
     </div>
     <div id="elementsCont">
-        <div class="elements" id="box1">
-
-        </div>
+        <div class="elements" id="box1"></div>
         <div class="elements" id="box2">
 
         </div>
